@@ -10,9 +10,9 @@ using ICSharpCode.SharpZipLib.Zip;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 
-namespace Micrososft.HttpZipBlobs
+namespace HttpZipBlobs
 {
-    public static class HttpZipBlobs
+    public static class HttpZipBlobsFunction
     {
         [FunctionName("HttpZipBlobs")]
         public static async Task<string> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req, ILogger log)
